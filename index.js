@@ -2,6 +2,11 @@ export function isLucky(ticket) {
   if (!ticket) {
     return "Ticket not provided";
   }
+
+  if (ticket.length === 6) {
+    return true;
+  }
+  return false;
 }
 
 // if (typeof ticket === "number") {

@@ -28,13 +28,13 @@ describe("isLucky", () => {
     });
   });
 
-  // describe("when a ticket with 7 characters is entered", () => {
-  //   test("should return false", () => {
-  //     const ticket = "3211232";
-  //     const result = isLucky(ticket);
-  //     expect(result).toBe(false);
-  //   });
-  // });
+  describe("when a ticket with 7 characters is entered", () => {
+    test("should return false", () => {
+      const ticket = "3211232";
+      const result = isLucky(ticket);
+      expect(result).toBe(false);
+    });
+  });
 
   // describe("when a ticket with 6 characters is entered", () => {
   //   describe("and the ticket isn't lucky", () => {
