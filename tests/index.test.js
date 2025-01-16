@@ -11,13 +11,13 @@ describe("isLucky", () => {
       });
     });
 
-    //   describe("and ticket is null", () => {
-    //     test("should return error message string", () => {
-    //       const ticket = null;
-    //       const result = isLucky(ticket);
-    //       expect(result).toStrictEqual("Ticket not provided");
-    //     });
-    //   });
+    describe("and ticket is null", () => {
+      test("should return error message string", () => {
+        const ticket = null;
+        const result = isLucky(ticket);
+        expect(result).toStrictEqual("Ticket not provided");
+      });
+    });
 
     //   describe("and ticket is undefined", () => {
     //     test("should return error message string", () => {
