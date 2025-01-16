@@ -54,13 +54,13 @@ describe("isLucky", () => {
   //   });
   // });
 
-  // describe("when a ticket has 5 characters", () => {
-  //   test("should return false", () => {
-  //     const ticket = "23454";
-  //     const result = isLucky(ticket);
-  //     expect(result).toBe(false);
-  //   });
-  // });
+  describe("when a ticket has 5 characters", () => {
+    test("should return false", () => {
+      const ticket = "23454";
+      const result = isLucky(ticket);
+      expect(result).toBe(false);
+    });
+  });
 
   // describe("when a ticket has a type of number", () => {
   //   test("should return error message", () => {
