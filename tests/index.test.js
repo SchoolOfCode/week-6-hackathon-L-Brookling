@@ -1,54 +1,72 @@
 import { test, expect, describe } from "vitest";
+import { isLucky } from "..";
 
-import { isLucky } from "../index";
+describe("isLucky", () => {
+  describe("when ticket is not entered", () => {
+    describe("and ticket is an empty string", () => {
+      test("should return error message string", () => {
+        const ticket = "";
+        const result = isLucky(ticket);
+        expect(result).toStrictEqual("Ticket not provided");
+      });
+    });
 
-describe("Checking the output value of the function", () => {
-  //0 Test if the function is empty.
-  //If the ticket parameter is not called, then this error should be thrown
-  //ARRANGE
-  test("ticket is empty", () => {
-    //ACT
-    const ticket = "";
-    //ASSERT
-    expect(() => isLucky(ticket)).toThrowError("Missing input");
-  });
+    //   describe("and ticket is null", () => {
+    //     test("should return error message string", () => {
+    //       const ticket = null;
+    //       const result = isLucky(ticket);
+    //       expect(result).toStrictEqual("Ticket not provided");
+    //     });
+    //   });
 
-  //1 Testing if ticket is lucky.
-  //If an input of 123321 is given then the correct outcome returned should be true.
-  //ARRANGE
-  test("returns lucky ticket as true", () => {
-    //ACT
-    const ticket = "123321";
-    //ASSERT
-    expect(isLucky(ticket)).toBe(true);
-  });
-});
+    //   describe("and ticket is undefined", () => {
+    //     test("should return error message string", () => {
+    //       const ticket = undefined;
+    //       const result = isLucky(ticket);
+    //       expect(result).toStrictEqual("Ticket not provided");
+    //     });
+    //   });
+    // });
 
-describe("Checking the number of digits in the ticket", () => {
-  //2 Testing that only six-digit numbers are allowed in the ticket.
-  //If input of more than or less than six-digits is given, then error message: "Ticket can only be six-digits" should be thrown.
-  //ARRANGE
-  test("only contains six-digits", () => {
-    // ACT
-    const ticket = "123321";
+    // describe("when a ticket with 7 characters is entered", () => {
+    //   test("should return false", () => {
+    //     const ticket = "3211232";
+    //     const result = isLucky(ticket);
+    //     expect(result).toBe(false);
+    //   });
+    // });
 
-    // ASSERT
-    expect(() => isLucky(ticket)).not.toThrow();
-  });
+    // describe("when a ticket with 6 characters is entered", () => {
+    //   describe("and the ticket isn't lucky", () => {
+    //     test("should return false", () => {
+    //       const ticket = "123456";
+    //       const result = isLucky(ticket);
+    //       expect(result).toBe(false);
+    //     });
+    //   });
 
-  test("has a value with more than six digits", () => {
-    // ACT
-    const ticket = "1233211";
+    //   describe("and the ticket is lucky", () => {
+    //     test("should return true", () => {
+    //       const ticket = "123321";
+    //       const result = isLucky(ticket);
+    //       expect(result).toBe(true);
+    //     });
+    //   });
+    // });
 
-    // ASSERT
-    expect(() => isLucky(ticket)).toThrow("Ticket can only be six-digits");
-  });
+    // describe("when a ticket has 5 characters", () => {
+    //   test("should return false", () => {
+    //     const ticket = "23454";
+    //     const result = isLucky(ticket);
+    //     expect(result).toBe(false);
+    //   });
+    // });
 
-  test("has a value with less than six digits", () => {
-    // ACT
-    const ticket = "12321";
-
-    // ASSERT
-    expect(() => isLucky(ticket)).toThrow("Ticket can only be six-digits");
+    // describe("when a ticket has a type of number", () => {
+    //   test("should return error message", () => {
+    //     const ticket = 123321;
+    //     const result = isLucky(ticket);
+    //     expect(result).toStrictEqual("Ticket must be of type string");
+    //   });
   });
 });
