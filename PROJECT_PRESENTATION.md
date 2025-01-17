@@ -23,13 +23,13 @@ isLucky('100200') => false // The ticket is not lucky
 MVP 1 - Lucky bus ticket:
 The coder must write a solution which calls the ticket when the sum of the first three digits are equal to the sum of the last three digits. A lucky ticket ticket should return true.
 
+## Stretch goals
+
 MVP 2 - Lucky receipt for coffee:
 The coder must then write a solution which calls the receipt lucky when the sum of the first five digits are equal to the sum of the last four. A lucky receipt should return true.
 
 MVP 3 - Shaking Faisal's hand:
 If both conditions are true, a text prompt/ GIF will appear indicating that Faisal is impressed and will shake your hand.
-
-## Stretch goals
 
 MVP 4 - If your route to the meet up in miles has more than one number the same e.g. 65.6 miles, Faisal will need to buy you a drink!
 

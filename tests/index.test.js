@@ -36,23 +36,23 @@ describe("isLucky", () => {
     });
   });
 
-  // describe("when a ticket with 6 characters is entered", () => {
-  //   describe("and the ticket isn't lucky", () => {
-  //     test("should return false", () => {
-  //       const ticket = "123456";
-  //       const result = isLucky(ticket);
-  //       expect(result).toBe(false);
-  //     });
-  //   });
+  describe("when a ticket with 6 characters is entered", () => {
+    // describe("and the ticket isn't lucky", () => {
+    //   test("should return false", () => {
+    //     const ticket = "123456";
+    //     const result = isLucky(ticket);
+    //     expect(result).toBe(false);
+    //   });
+    // });
 
-  //   describe("and the ticket is lucky", () => {
-  //     test("should return true", () => {
-  //       const ticket = "123321";
-  //       const result = isLucky(ticket);
-  //       expect(result).toBe(true);
-  //     });
-  //   });
-  // });
+    describe("and the ticket is lucky", () => {
+      test("should return true", () => {
+        const ticket = "123321";
+        const result = isLucky(ticket);
+        expect(result).toBe(true);
+      });
+    });
+  });
 
   describe("when a ticket has 5 characters", () => {
     test("should return false", () => {
