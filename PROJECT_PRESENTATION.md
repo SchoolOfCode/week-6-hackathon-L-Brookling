@@ -4,11 +4,15 @@ In this workshop, I have been tasked to create my own programming challenge for 
 
 ## Overview
 
-In this project you will write a function to find out whether the bus ticket number you have to get to Faisal's meet up is lucky or not.
+For context, you really want to attend Faisal's meet up and you can only get there by bus due to factors out of your control. Faisal is offering handshakes to anyone who makes it to the meet up with a lucky bus ticket. What's a lucky bus ticket you ask?...good question! A lucky bus ticket consists of a six-digit code, if the sum of the first three numbers equals the sum of the last three, it is considered a "lucky ticket".
+
+You will write a function to find out whether the bus ticket number you have to get to Faisal's meet up is lucky or not.
 
 The ticket is seen as lucky when the sum of the first three digits equals the sum of the last three digits.
 
 The outcome should return true if the ticket number is 'lucky', otherwise return false.
+
+Consider that tickets with only 6 digits are accepted into the function.
 
 Consider that input is always a string.
 

@@ -10,7 +10,7 @@ describe("isLucky", () => {
         const ticket = "";
         const result = isLucky(ticket);
         //ASSERT
-        expect(result).toStrictEqual("Ticket not provided");
+        expect(result).toStrictEqual("Ticket not provided"); //Bug 3
       });
     });
 
