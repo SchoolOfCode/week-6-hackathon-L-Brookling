@@ -19,6 +19,15 @@
 // isLucky('12a21a') => false // Letters are not allowed
 // isLucky('100200') => false // The ticket is not lucky
 
+//One last thing!
+//To ensure that you are able to run this project:
+
+// Run npm install
+
+// Fill out challenge
+
+// Run npm test to see if you passed
+
 export function isLucky(ticket) {
   // Code goes here!
 }
