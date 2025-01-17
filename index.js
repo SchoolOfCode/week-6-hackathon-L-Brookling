@@ -2,6 +2,11 @@ export function isLucky(ticket) {
   if (!ticket) {
     return "Ticket not provided";
   }
+
+  if (typeof ticket === "number") {
+    return "Ticket must be of type string";
+  }
+
   if (ticket.length === 6) {
     if (
       Number(ticket[0]) + Number(ticket[1]) + Number(ticket[2]) ===
@@ -12,7 +17,3 @@ export function isLucky(ticket) {
   }
   return false;
 }
-
-// if (typeof ticket === "number") {
-//   return "Ticket must be of type string";
-// }

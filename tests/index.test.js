@@ -83,11 +83,14 @@ describe("isLucky", () => {
     });
   });
 
-  // describe("when a ticket has a type of number", () => {
-  //   test("should return error message", () => {
-  //     const ticket = 123321;
-  //     const result = isLucky(ticket);
-  //     expect(result).toStrictEqual("Ticket must be of type string");
-  //   });
-  // });
+  describe("when a ticket has a type of number", () => {
+    //ARRANGE
+    test("should return error message", () => {
+      //ACT
+      const ticket = 123321;
+      const result = isLucky(ticket);
+      //ASSERT
+      expect(result).toStrictEqual("Ticket must be of type string");
+    });
+  });
 });
